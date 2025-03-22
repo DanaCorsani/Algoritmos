@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: lightsteelblue;
+    font-family:Helvetica;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.darkblue{
+    background-color:darkslateblue;
+}
+.blank{
+    background-color: dimgrey;
+}
+.days{
+    background-color:indigo;
+}
+.hour{
+    background-color: darkorchid;
+}
+.misc{
+    background-color:steelblue;
+}
+#header{
+    background-color: midnightblue;
+    font-family:'Times New Roman';
+    font-size:xx-large;
+}
+#night{
+    background-color: darkmagenta;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size:x-large;
+}
+td, th{
+    padding: 10px;
+}
+#info{
+    text-align: right;
+    font-family: Verdana;
+    font-size: small;
+}
