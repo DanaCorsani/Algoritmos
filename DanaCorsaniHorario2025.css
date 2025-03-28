@@ -222,3 +222,6 @@ button{
 button:hover{
     background-color:gray;
 }
+footer{
+    pointer-events: none
+}
