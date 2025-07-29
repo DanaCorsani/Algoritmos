@@ -1,0 +1,227 @@
+body{
+    background-color: black;
+    color:white;
+    font-family:Helvetica;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.darkblue{
+    background-color:#0073e6;
+    color:white;
+}
+.blank{
+    background-color:#4b6a88;
+}
+.days{
+    background-color:#2546f0;
+    color: white;
+}
+.hour{
+    background-color:#00bf7d;
+    color:black;
+}
+.misc{
+    background-color:#00b4c5;
+    color: black;
+}
+#header{
+    background-color:#5928ed;
+    color: white;
+    font-family:'Times New Roman';
+    font-size:xx-large;
+}
+#night{
+    background-color:#00bf7d;
+    color:black;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size:x-large;
+}
+td, th{
+    padding: 10px;
+}
+#info{
+    font-family: Verdana;
+    font-size: small;
+    position:fixed;
+    bottom: 0;
+    left: 67%;
+    transform: translateX(-3%);     /*This one is to prevent the test from overflowing. Because I don't want it to divide itself into two lines.*/
+}
+.divtable{
+    overflow-x:auto;        /*Add responsive to the table, this is so it doesn't overflow and a horizontal scroll bar will display at the bottom of the table if the screen is too small in comparison to the table*/
+    text-align: center;
+}
+/*a partir de acá voy a intentar hacer que al hacer hover sobre una materia, ésta se ilumine (ese td en especifico con un color intenso), los demas tds que correspondan a esa materia se iluminen con un color menos intenso, y que el día y horario perteneciente a esa materia también se ilumine.*/
+/*    #EnglishIIsecond, #EnglishIIthird{
+        background-color:#0073e6 ;
+        transition: background-color 2s ease;
+    }
+    #monday{
+        background-color: #2546f0 ;
+        transition: background-color 2s ease;
+    }
+    #second, #third{
+        background-color: #00bf7d;
+        transition: background-color 2s ease;
+    }
+    #EnglishIIsecond:hover ~ #EnglishIIthird,
+    #EnglishIIsecond:hover ~ #monday,
+    #EnglishIIsecond:hover ~ #second,
+    #EnglishIIsecond:hover ~ #third
+    {
+        background-color: #5928ed;
+    }*/
+.flex-container{
+    /*position: fixed;
+    bottom: 8%;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;                      /*changes the height of the buttons at the bottom of the page.*/
+    align-items: flex-end;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+#horario1bbutton{
+    display: flex;
+    justify-content: flex-end;
+}
+#horario3robutton{
+    height: 200px;
+}
+
+.ppc{
+    background-color: #b3c7f7;
+    color: black;
+}
+.pp{
+    background-color: #f57600;
+    color: black;
+}
+
+#header1a{
+    background-color: #b3c7f7;
+    color: black;
+    font-family:'Times New Roman';
+    font-size:xx-large;
+}
+.days1a{
+    background-color: #f194b8;
+    color: black;
+}
+.subject1a{
+    background-color: #f8b8d0;
+    color: black;
+}
+.misc1a{
+    background-color: #b9e192;
+    color: black;
+}
+.hour1a{
+    background-color: #cfebb6;
+    color: black;
+}
+#night1a{
+    background-color: #cfebb6;
+    color: black;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size:x-large;
+}
+.blank1a{
+    background-color: lightgray;
+}
+
+
+#header1b{
+    background-color: #b9e3f8;
+    color: black;
+    font-family:'Times New Roman';
+    font-size:xx-large;
+}
+.days1b{
+    background-color: #fabafe;
+    color: black;
+}
+.subject1b{
+    background-color: #fdd0fe;
+    color: black;
+}
+.misc1b{
+    background-color: #ffffa3;
+    color: black;
+}
+.hour1b{
+    background-color: #ffffbf;
+    color: black;
+}
+#night1b{
+    background-color: #ffffbf;
+    color: black;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size:x-large;
+}
+.blank1b{
+    background-color: lightgray;
+}
+
+
+#header3{
+    background-color: #872bba;
+    color: white;
+    font-family:'Times New Roman';
+    font-size:xx-large;
+}
+.days3{
+    background-color:  #1f0b77;
+    color: white;
+}
+.subject3{
+    background-color: #412ac9;
+    color: white;
+}
+.hour3{
+    background-color:  #2854cc;
+    color: white;
+}
+.misc3{
+    background-color: #c23088;
+    color: white;
+}
+.blank3{
+    background-color: #8aaddb;
+}
+#night3{
+    background-color: #0879c2;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size:x-large;
+}
+
+
+button{
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #555555;
+    border: 2px solid #b9e3f8;
+    color: white;
+    text-align: center;
+    transition: background-color 2s;
+}
+button:hover{
+    background-color:gray;
+}
+footer{
+    pointer-events: none
+}
