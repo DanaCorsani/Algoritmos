@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+</head>
+<body>
+    <!-- Formularios en HTML Algoritmos y Estructuras de Datos II 28/04/2025  -->
+    <h1>Formulario de Inscripción</h1>
+    <form action="" method="get">      <!--action: a donde va a enviar los datos. vacio= se queda en la misma pagina.  Method: post, envia llos datos pero no me mu8estra nada en la barra de direcciones, ni tampoco me muestra si se enviaron o no. el metodo get si se muestra n la barra de direcciones. este es el metodo por defecto.--> 
+        Nombre: <input type="text" name="nom" minlength="3" maxlength="10" required><br>    <!--Poner nombre a cada input ya que si hago un formulario es porque quiero enviarlo a alguna parte, y si quiero poder enviarlos tienen que estar identificados, porque si no no podría recibirlos.-->
+        Apellido: <input type="text" name="ape" required><br>
+        DNI: <input type="number" name="dni" min="1000000" max="" required><br>
+        Fecha de nacimiento: <input type="date" name="dechaN"><br>
+        Email: <input type="email" name="email" required><br>       <!--este input es medio mentiroso, se va a fijar solo que haya un arroba. la validacion no valida que el mail sea valido en si. -->
+        <!-- radios  -->
+        Turno: 
+        <input type="radio" name="turno" value="m" >Mañana <!--se va a ver un puntito.-->
+        <input type="radio" name="turno" value="t" >Tarde
+        <input type="radio" name="turno" value="n" >Vespertino<br>
+        <!-- si tienen el mismo name, si elijo una opcion, se des-selecciona del otro. Si tienen diferentes names, lo toma como si fuera otro radio -->
+        
+        <!---select, lista desplegable-->
+        Carrera:
+        
+        <select name="carrera" id="" required>
+            <option value="" disabled selected>Elija una carrera</option>      <!--creo un default vacio (value="") y le ponemos que esté disabled (se ve al princpio por estar seleccionada, pero no puede ser seleccionada intencionalmente por el usuario) y selected, es el primero que va a ver el usuario. -->
+            <option value="mat" >Prof. de Matemática</option>
+            <option value="sis" >Analista de Sistemas</option>
+            <option value="ing" >Prof. de Inglés</option>
+        </select><br>
+        <!-- En el select siempre está seleccionado un valor por defecto. Si se quiere que no haya un valor predefinido por si alguien se olvida de elegir, para que el formulario no mande un valor incorrecto  -->
+        Contraseña: <input type="password" name="contra">       <!--Siempre que yo envío una contraseña, tengo que enviar ele formulario por POST, para que no se vea en la barra de direcciones (link) la contraseña ingresada.-->
+        <br><input type="submit">
+    </form>
+
+</body>
+</html>
