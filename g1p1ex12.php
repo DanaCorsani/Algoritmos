@@ -14,10 +14,10 @@
     <main>
         <form action="" method="POST">
             <input type="hidden" name="middleForm">
-            a: <input type="number" name="a"><br>
-            b: <input type="number" name="b"><br>
-            c: <input type="number" name="c"><br>
-            <input type="submit">
+            a: <input type="number" name="a" required><br>
+            b: <input type="number" name="b" required><br>
+            c: <input type="number" name="c" required><br>
+            <input type="submit" value="Calcular el valor del medio">
         </form>
     </main>
     <aside></aside>
@@ -42,13 +42,16 @@ if(isset($_POST['middleForm'])){
     $resultado= "";     //aca pongo el valor del medio si es que hay
 
     if(($a>$b && $a<$c)||($a<$b && $a>$c)){
-        echo $a." es el número del medio";
+        echo"<br><br>Para a=".$a." b=".$b." c=".$c;
+        echo $resultado="<br>El resultado es: ".$a." es el número del medio";
     }elseif(($b>$a && $b<$c)||($b<$a && $b>$c)){
-        echo $b." es el número del medio";
+        echo"<br><br>Para a=".$a." b=".$b." c=".$c;
+        echo $resultado="<br>El resultado es: ".$b." es el número del medio";
     }elseif(($c>$a && $c<$b)|| ($c>$a && $c<$b)){
-        echo $c." es el número del medio";
+        echo $resultado="<br>El resultado es: ".$c." es el número del medio";
     }else{
         echo "No existe un único valor que se posicione al medio";
+        echo"<br><br>Para a=".$a." b=".$b." c=".$c;
     }
 
 }
