@@ -25,3 +25,10 @@ table.calculator, tr.calculator, td.calculator{
     text-align: center;
     border: 1px solid #029356;
 }
+.guias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;    /* todo esto no funcionó, estudiar porqué*/
+    padding: 20px;
+}
