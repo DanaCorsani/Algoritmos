@@ -38,8 +38,9 @@
             }
             */
             #endregion
-            for($i=1, $i<=5, $i++){
+            for($i=1; $i<=5; $i++){
                 echo "Numero $i: <input type='number' name='numeros[]' required"; #supuestamente con los corchetes despues del nombre, php lo recibe como array
+                //// list() doesn't work with strings dice en el manual de php, y dice tambien en el manual de php que php recibe todos los valores de formularios sin importar que type sean, como string. por lo tanto tengo que asignarle tipo int, tengo que asignarle el tipo de dato que yo quiero que tenga. creo que esto me lo habia dicho deepseek igual, creckear mas fuentes despues.
             }
             ?>
 
