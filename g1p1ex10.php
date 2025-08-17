@@ -34,7 +34,7 @@ if(isset($_POST['moreOrLessThanForm'])){    //con ISSET verifico si se envió el
 // #region firstTry
     /*
     Encontré una forma más fácil
-     $numbers= array($n1, $n2, $n3, $n4, $n5);
+    $numbers= array($n1, $n2, $n3, $n4, $n5);
 
     foreach($numbers as $n){
         echo "$n <br>";
