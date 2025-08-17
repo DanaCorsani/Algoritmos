@@ -5,10 +5,10 @@
         <!-- <style>body{background-color: black;}</style> test-->
     </head>
     <body>
-            <header>
+        <header>
             <h1>Ingrese 5 numeros</h1>
         </header>
-            <main>
+        <main>
                 <form action="" method="POST">
                 <input type="hidden" name="moreOrLessThanForm">
                 <input type="number" name="num1" required>
