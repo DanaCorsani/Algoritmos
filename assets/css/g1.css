@@ -25,6 +25,10 @@ table.calculator, tr.calculator, td.calculator{
     text-align: center;
     border: 1px solid #029356;
 }
+.clock{
+    background-image:url(/assets/img/clock.png);
+    background-size: cover;
+}
 .guias{
     display: flex;
     flex-wrap: wrap;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 14</title>
-    <link rel="stylesheet" href="./css/g1.css">
+    <link rel="stylesheet" href="./assets/css/g1.css">
 </head>
 <body>
     
@@ -12,11 +12,9 @@
         <h1>Ejercicio 14</h1>
     </header>
     <main>
-        <form action="" method="POST">
-            <input type="hidden" name="">
-            <input type="text">
-            <input type="submit">
-        </form>
+        <div class="clock">
+        <button>Clock</button>
+        </div>
     </main>
     <aside></aside>
     <footer></footer>
