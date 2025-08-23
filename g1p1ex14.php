@@ -12,9 +12,11 @@
         <h1>Ejercicio 14</h1>
     </header>
     <main>
-        <div class="clock">
-        <button>Clock</button>
-        </div>
+        <form action="" method="get">
+                    <div class="clock">
+                    <button type="submit" name="clock">Clock</button> <!--cual es la diferencia entre un button type submit y un input type submit-->
+                    </div>
+        </form>
     </main>
     <aside></aside>
     <footer></footer>
@@ -26,5 +28,9 @@
 
 /*14) Crear un programa que al presionar un botón me muestre la fecha y hora actual en español.
 Ejemplo: Hoy es Lunes 8 de Abril de 2024, son las 12:35*/
+
+if(isset($_GET['clock'])){
+    echo"Hoy es ".date("d/m/y");
+}
 
 ?>

@@ -13,8 +13,13 @@
     <main>
         <form action="" method="POST">
             <input type="hidden" name="">
-            <input type="text">
-            <input type="submit">
+            <button name="inicioTempo" >Click aquí para iniciar temporizador</button>
+            <?php
+            if(isset($_POST['inicioTempo'])){
+                echo date("h:i:s");
+                echo"<br><br> <button name='pararTempo'>Click aquí para detener el temporizador</button>" ;
+            }
+            ?>
         </form>
     </main>
     <aside></aside>
