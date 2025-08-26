@@ -12,11 +12,19 @@
         <h1>Ejercicio 14</h1>
     </header>
     <main>
+<<<<<<< HEAD
         <form action="" method="get">
                     <div class="clock">
                     <button type="submit" name="clock">Clock</button> <!--cual es la diferencia entre un button type submit y un input type submit-->
                     </div>
         </form>
+=======
+        <div class="clock">
+            <form action="" method="GET">
+                <button name="clock">Clock</button>
+            </form>
+        </div>
+>>>>>>> c56810cf19e3bc7d48722d951c09e9e168819787
     </main>
     <aside></aside>
     <footer></footer>
@@ -30,7 +38,18 @@
 Ejemplo: Hoy es Lunes 8 de Abril de 2024, son las 12:35*/
 
 if(isset($_GET['clock'])){
+<<<<<<< HEAD
     echo"Hoy es ".date("d/m/y");
 }
 
+=======
+    $actual=getdate();
+    echo"Hoy es: ".$actual;
+
+    $dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+    $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+    
+}
+>>>>>>> c56810cf19e3bc7d48722d951c09e9e168819787
 ?>
