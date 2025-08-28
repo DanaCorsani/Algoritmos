@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +30,13 @@
 Ejemplo: Hoy es Lunes 8 de Abril de 2024, son las 12:35*/
 
 if(isset($_GET['clock'])){
-    echo"Hoy es ".date("d/m/y");
-}
+setlocale(LC_TIME, 'ES');
+    date_default_timezone_set('America/Buenos_Aires');      //https://www.php.net/manual/en/function.date-default-timezone-set.php
+    //echo"Hoy es ".strftime(%l %j \of F \of Y);
+    echo "Hoy es: " . strftime('%A');
 
+    echo"Hoy es ".date('l j \of F \of Y').", son las: ".date('H:i:s');    //https://www.php.net/manual/en/function.date.php h:i:s=>G para que diga 21 y no 9 H parece hacer lo mismo
+}
 
     $dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
