@@ -30,10 +30,11 @@
 Ejemplo: Hoy es Lunes 8 de Abril de 2024, son las 12:35*/
 
 if(isset($_GET['clock'])){
-setlocale(LC_TIME, 'ES');
-    date_default_timezone_set('America/Buenos_Aires');      //https://www.php.net/manual/en/function.date-default-timezone-set.php
+    // setlocale(LC_TIME, 'ES');     
+    setlocale(LC_TIME, 'es_ES.utf8', 'spa', 'es_ES', 'es', 'spanish');
+    date_default_timezone_set('America/Argentina/Buenos_Aires');      //https://www.php.net/manual/en/function.date-default-timezone-set.php        https://www.w3schools.com/php/php_ref_timezones.asp
     //echo"Hoy es ".strftime(%l %j \of F \of Y);
-    echo "Hoy es: " . strftime('%A');
+    //echo "Hoy es: " . strftime('%A');     así lo hacía la profe pero está deprecada la funcion strftime
 
     echo"Hoy es ".date('l j \of F \of Y').", son las: ".date('H:i:s');    //https://www.php.net/manual/en/function.date.php h:i:s=>G para que diga 21 y no 9 H parece hacer lo mismo
 }
